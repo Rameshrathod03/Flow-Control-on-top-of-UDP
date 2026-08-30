@@ -1,4 +1,4 @@
-```markdown
+
 ## Overview & Architecture
 
 This project implements a reliable transport layer built directly on top of raw UDP sockets (`SOCK_DGRAM`) in C[cite: 2]. By layering sequence tracking, dynamic flow control, and automated retransmissions over connectionless datagrams, it provides TCP-like stream reliability through custom socket APIs (`k_socket`, `k_bind`, `k_sendto`, `k_recvfrom`, `k_close`)[cite: 2].
